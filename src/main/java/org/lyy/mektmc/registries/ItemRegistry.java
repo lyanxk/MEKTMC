@@ -22,7 +22,7 @@ public final class ItemRegistry {
                     new InfiniteGasCellItem(
                             MekanismKeyHelper.gas(MekanismChemicals.ETHENE),
                             new Item.Properties().stacksTo(1),
-                            Component.literal("∞ 无限乙烯单元")
+                            Component.literal("ME无限乙烯单元")
                     )
             );
     public static final DeferredItem<Item> INFINITE_DEUTERIUM_CELL =
@@ -75,7 +75,7 @@ public final class ItemRegistry {
                     new InfiniteGasCellItem(
                             MekanismKeyHelper.gas(MekanismChemicals.FISSILE_FUEL),
                             new Item.Properties().stacksTo(1),
-                            Component.literal("∞ 裂变燃料 Cell")
+                            Component.literal("ME裂变燃料 Cell")
                     )
             );
 

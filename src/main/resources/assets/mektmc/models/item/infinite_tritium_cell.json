@@ -1,1 +1,6 @@
-{ "parent": "meinfinitycell:item/infinity_cobblestone_cell" }
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mektmc:item/infinity_cell_disk"
+  }
+}
