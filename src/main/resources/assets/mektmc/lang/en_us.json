@@ -1,9 +1,20 @@
 {
-  "item.mektmc.infinite_ethylene_cell": "MEInfinite Ethylene Cell",
-  "item.mektmc.infinite_deuterium_cell": "MEInfinite Deuterium Cell",
-  "item.mektmc.infinite_tritium_cell": "MEInfinite Tritium Cell",
-  "item.mektmc.infinite_dt_fuel_cell": "MEInfinite D-T Fuel Cell",
-  "item.mektmc.infinite_brine_cell": "MEInfinite Brine Cell",
-  "item.mektmc.infinite_lithium_cell": "MEInfinite Lithium Cell",
-  "item.mektmc.infinite_fissile_fuel_cell": "MEInfinite Fissile Fuel Cell"
+  "item.mektmc.category_disk": "ME Category Disk",
+  "block.mektmc.category_index": "ME Category Index",
+  "block.mektmc.categorized_terminal": "Categorized ME Terminal",
+  "container.mektmc.category_index": "ME Category Index",
+  "container.mektmc.categorized_terminal": "Terminal",
+  "screen.mektmc.categorized_terminal.loading": "Loading categories...",
+  "screen.mektmc.categorized_terminal.status.ok": "Online",
+  "screen.mektmc.categorized_terminal.status.offline": "Terminal is offline",
+  "screen.mektmc.categorized_terminal.status.no_index": "No category index found",
+  "screen.mektmc.categorized_terminal.status.conflict": "Category index conflict",
+  "tooltip.mektmc.category_disk.database": "Database: %s",
+  "item.mektmc.infinite_ethylene_cell": "ME Infinite Ethylene Cell",
+  "item.mektmc.infinite_deuterium_cell": "ME Infinite Deuterium Cell",
+  "item.mektmc.infinite_tritium_cell": "ME Infinite Tritium Cell",
+  "item.mektmc.infinite_dt_fuel_cell": "ME Infinite D-T Fuel Cell",
+  "item.mektmc.infinite_brine_cell": "ME Infinite Brine Cell",
+  "item.mektmc.infinite_lithium_cell": "ME Infinite Lithium Cell",
+  "item.mektmc.infinite_fissile_fuel_cell": "ME Infinite Fissile Fuel Cell"
 }

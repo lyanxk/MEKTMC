@@ -23,6 +23,10 @@ public final class InfiniteGasCellHandler implements ICellHandler {
         if (!(is.getItem() instanceof InfiniteGasCellItem cellItem)) {
             return null;
         }
-        return new InfiniteGasCellInventory(is, cellItem, host);
+        try {
+            return new InfiniteGasCellInventory(is, cellItem, host);
+        } catch (IllegalStateException ignored) {
+            return null;
+        }
     }
 }

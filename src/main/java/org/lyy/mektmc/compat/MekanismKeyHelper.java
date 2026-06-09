@@ -12,6 +12,9 @@ public final class MekanismKeyHelper {
     public static Supplier<MekanismKey> gas(Supplier<? extends Chemical> gasSupplier) {
         return () -> {
             var gas = gasSupplier.get();
+            if (gas == null) {
+                throw new IllegalStateException("Gas supplier returned null");
+            }
             var key = MekanismKey.of(gas.getStack(1));
             if (key == null) {
                 throw new IllegalStateException("Gas supplier returned empty gas");
