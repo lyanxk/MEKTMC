@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BCB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mekanism:solar_neutron_activator"
+    },
+    "C": {
+      "item": "mektmc:infinite_lithium_cell"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_tritium_cell",
+    "count": 1
+  }
+}

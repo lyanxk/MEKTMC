@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CHC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:concretes"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_concrete_cell",
+    "count": 1
+  }
+}

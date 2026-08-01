@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "GHG",
+    "BGB"
+  ],
+  "key": {
+    "B": {
+      "item": "create:zinc_block"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_create_zinc_cell",
+    "count": 1
+  }
+}

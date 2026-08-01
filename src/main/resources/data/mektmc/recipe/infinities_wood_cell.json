@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LHL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "tag": "mektmc:wood_cell_ingredients"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_wood_cell",
+    "count": 1
+  }
+}

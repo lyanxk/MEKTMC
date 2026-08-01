@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BCB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mekanism:upgrade_filter"
+    },
+    "C": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_deuterium_cell",
+    "count": 1
+  }
+}

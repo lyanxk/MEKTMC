@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "item_input": {
+    "count": 1,
+    "item": "ae2:singularity"
+  },
+  "chemical_input": {
+    "amount": 5,
+    "chemical": "mekanism:antimatter"
+  },
+  "output": {
+    "count": 1,
+    "id": "minecraft:nether_star"
+  },
+  "duration": 200,
+  "per_tick_usage": false
+}

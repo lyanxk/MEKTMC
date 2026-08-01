@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "key": {
+    "B": {
+      "item": "create:blaze_cake"
+    },
+    "C": {
+      "item": "avaritia:infinity_catalyst"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "pattern": [
+    "         ",
+    "         ",
+    "  PPPPP  ",
+    "  PBBBP  ",
+    "  PBCBP  ",
+    "  PBBBP  ",
+    "  PPPPP  ",
+    "         ",
+    "         "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_blaze_cake"
+  },
+  "tier": 4
+}

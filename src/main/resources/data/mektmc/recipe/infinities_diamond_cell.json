@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "GHG",
+    "BGB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:diamond_block"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_diamond_cell",
+    "count": 1
+  }
+}

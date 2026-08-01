@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "item_input": {
+    "count": 1,
+    "item": "mekanism:block_uranium"
+  },
+  "chemical_input": {
+    "amount": 3,
+    "chemical": "mekanism:antimatter"
+  },
+  "output": {
+    "count": 1,
+    "id": "mektmc:infinite_fissile_fuel_cell"
+  },
+  "duration": 200,
+  "per_tick_usage": true
+}

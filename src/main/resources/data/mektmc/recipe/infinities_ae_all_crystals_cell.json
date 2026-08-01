@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedae"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AGB",
+    "GHG",
+    "CGD"
+  ],
+  "key": {
+    "A": {
+      "item": "mektmc:infinities_ae_certus_quartz_cell"
+    },
+    "B": {
+      "item": "mektmc:infinities_ae_charged_certus_quartz_cell"
+    },
+    "C": {
+      "item": "mektmc:infinities_ae_fluix_cell"
+    },
+    "D": {
+      "item": "mektmc:infinities_extendedae_entro_cell"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_ae_all_crystals_cell",
+    "count": 1
+  }
+}

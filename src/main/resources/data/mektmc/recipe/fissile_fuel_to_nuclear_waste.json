@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:washing",
+  "chemical_input": {
+    "amount": 2,
+    "chemical": "mekanism:fissile_fuel"
+  },
+  "fluid_input": {
+    "amount": 10,
+    "tag": "minecraft:water"
+  },
+  "output": {
+    "amount": 1,
+    "id": "mekanism:nuclear_waste"
+  }
+}

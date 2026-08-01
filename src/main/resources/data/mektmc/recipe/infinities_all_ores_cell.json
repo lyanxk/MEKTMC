@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:nucleosynthesizing",
+  "item_input": {
+    "count": 1,
+    "item": "ae2:sky_stone_block"
+  },
+  "chemical_input": {
+    "amount": 6,
+    "chemical": "mekanism:antimatter"
+  },
+  "output": {
+    "count": 1,
+    "id": "mektmc:infinities_all_ores_cell"
+  },
+  "duration": 200,
+  "per_tick_usage": true
+}

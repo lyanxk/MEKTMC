@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DSG",
+    "LHW",
+    "CYT"
+  ],
+  "key": {
+    "D": {
+      "item": "mektmc:infinity_dirt_cell"
+    },
+    "S": {
+      "item": "mektmc:infinity_sand_cell"
+    },
+    "G": {
+      "item": "mektmc:infinity_gravel_cell"
+    },
+    "L": {
+      "item": "mektmc:infinity_lava_cell"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    },
+    "W": {
+      "item": "mektmc:infinities_wood_cell"
+    },
+    "C": {
+      "item": "mektmc:infinities_concrete_cell"
+    },
+    "Y": {
+      "item": "mektmc:infinities_dye_cell"
+    },
+    "T": {
+      "item": "mektmc:infinities_stone_cell"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_non_ores_cell",
+    "count": 1
+  }
+}

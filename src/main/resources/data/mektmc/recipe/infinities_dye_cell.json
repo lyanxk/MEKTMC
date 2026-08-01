@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DHD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "tag": "c:dyes"
+    },
+    "H": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_dye_cell",
+    "count": 1
+  }
+}

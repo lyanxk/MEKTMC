@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:ultimate_crushing_factory"
+    },
+    "B": {
+      "item": "minecraft:melon"
+    },
+    "C": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_ethylene_cell",
+    "count": 1
+  }
+}

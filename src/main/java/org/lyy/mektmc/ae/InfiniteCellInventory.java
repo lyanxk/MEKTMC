@@ -2,59 +2,56 @@ package org.lyy.mektmc.ae;
 
 import appeng.api.config.Actionable;
 import appeng.api.networking.security.IActionSource;
+import appeng.api.stacks.AEKey;
+import appeng.api.stacks.KeyCounter;
 import appeng.api.storage.MEStorage;
 import appeng.api.storage.cells.CellState;
 import appeng.api.storage.cells.ISaveProvider;
 import appeng.api.storage.cells.StorageCell;
-import appeng.api.stacks.AEKey;
-import appeng.api.stacks.KeyCounter;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
+import org.jetbrains.annotations.Nullable;
+import org.lyy.mektmc.items.InfiniteCellItem;
 
-import me.ramidzkh.mekae2.ae2.MekanismKey;
-import org.lyy.mektmc.items.InfiniteGasCellItem;
+public final class InfiniteCellInventory implements StorageCell {
 
-public final class InfiniteGasCellInventory implements StorageCell {
+    private static final long DISPLAY_AMOUNT = Long.MAX_VALUE / 4;
 
     private final ItemStack cellStack;
-    private final InfiniteGasCellItem cellItem;
-    private final MekanismKey fixedKey;
-    private final ISaveProvider saveProvider;
+    private final List<AEKey> fixedKeys;
+    private final @Nullable ISaveProvider saveProvider;
 
-    public InfiniteGasCellInventory(ItemStack cellStack, InfiniteGasCellItem cellItem, ISaveProvider saveProvider) {
+    public InfiniteCellInventory(ItemStack cellStack, InfiniteCellItem cellItem, @Nullable ISaveProvider saveProvider) {
         this.cellStack = cellStack;
-        this.cellItem = cellItem;
-        this.fixedKey = cellItem.getFixedKey(cellStack);
-        this.saveProvider = saveProvider; // 可能为 null
+        this.fixedKeys = cellItem.getFixedKeys();
+        this.saveProvider = saveProvider;
     }
 
-    private boolean matches(AEKey what) {
-        return cellItem.getFixedKey(cellStack).equals(what);
+    private boolean matches(AEKey key) {
+        return fixedKeys.contains(key);
     }
-
 
     @Override
     public long insert(AEKey what, long amount, Actionable mode, IActionSource source) {
         MEStorage.checkPreconditions(what, amount, mode, source);
-        if (amount == 0) return 0;
         return matches(what) ? amount : 0;
     }
 
     @Override
     public long extract(AEKey what, long amount, Actionable mode, IActionSource source) {
         MEStorage.checkPreconditions(what, amount, mode, source);
-        if (amount == 0) return 0;
         return matches(what) ? amount : 0;
     }
 
     @Override
-    public void getAvailableStacks(KeyCounter out) {
-        out.add(fixedKey, Long.MAX_VALUE / 4);
+    public void getAvailableStacks(KeyCounter output) {
+        fixedKeys.forEach(key -> output.add(key, DISPLAY_AMOUNT));
     }
 
     @Override
     public Component getDescription() {
-        return cellItem.getCellDescription();
+        return cellStack.getHoverName();
     }
 
     @Override
@@ -69,7 +66,7 @@ public final class InfiniteGasCellInventory implements StorageCell {
 
     @Override
     public double getIdleDrain() {
-        return 0.0;
+        return 0;
     }
 
     @Override

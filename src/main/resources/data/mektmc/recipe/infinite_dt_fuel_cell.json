@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    " M ",
+    " T "
+  ],
+  "key": {
+    "D": {
+      "item": "mektmc:infinite_deuterium_cell"
+    },
+    "M": {
+      "item": "mekanism:chemical_infuser"
+    },
+    "T": {
+      "item": "mektmc:infinite_tritium_cell"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_dt_fuel_cell",
+    "count": 1
+  }
+}

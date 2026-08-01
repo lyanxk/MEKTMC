@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BCB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "mektmc:infinite_brine_cell"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_lithium_cell",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedae"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "GCG",
+    "BGB"
+  ],
+  "key": {
+    "B": {
+      "item": "extendedae:entro_crystal"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    },
+    "C": {
+      "item": "mektmc:infinities_ae_fluix_cell"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_extendedae_entro_cell",
+    "count": 1
+  }
+}

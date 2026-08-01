@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "GCG",
+    "BGB"
+  ],
+  "key": {
+    "B": {
+      "item": "ae2:flawed_budding_quartz"
+    },
+    "G": {
+      "item": "minecraft:dragon_breath"
+    },
+    "C": {
+      "item": "ae2:sky_stone_block"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinities_ae_certus_quartz_cell",
+    "count": 1
+  }
+}

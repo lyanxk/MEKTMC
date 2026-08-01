@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "poopsky"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DPD",
+    "PGP",
+    "DPD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "poopsky:pooburger"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "id": "minecraft:ancient_debris",
+    "count": 1
+  }
+}

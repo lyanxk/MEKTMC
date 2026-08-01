@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createaddition"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "key": {
+    "B": {
+      "item": "createaddition:electric_motor"
+    },
+    "C": {
+      "item": "avaritia:infinity_catalyst"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "pattern": [
+    "         ",
+    "         ",
+    "  PPPPP  ",
+    "  PBBBP  ",
+    "  PBCBP  ",
+    "  PBBBP  ",
+    "  PPPPP  ",
+    "         ",
+    "         "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_motor"
+  },
+  "tier": 4
+}

@@ -15,18 +15,8 @@ public final class CreativeTabRegistry {
             CREATIVE_MODE_TABS.register("mektmc", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.mektmc"))
                     .icon(() -> ItemRegistry.INFINITE_ITEM_CONTAINER.get().getDefaultInstance())
-                    .displayItems((parameters, output) -> {
-                        output.accept(ItemRegistry.INFINITE_ITEM_CONTAINER.get());
-                        output.accept(ItemRegistry.INFINITE_FLUID_CONTAINER.get());
-                        output.accept(ItemRegistry.INFINITE_CHEMICAL_CONTAINER.get());
-                        output.accept(ItemRegistry.INFINITE_ETHYLENE_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_DEUTERIUM_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_TRITIUM_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_D_T_FUEL_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_BRINE_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_LITHIUM_CELL.get());
-                        output.accept(ItemRegistry.INFINITE_FISSILE_FUEL_CELL.get());
-                    })
+                    .displayItems((parameters, output) ->
+                          ItemRegistry.ITEMS.getEntries().forEach(item -> output.accept(item.get())))
                     .build());
 
     private CreativeTabRegistry() {
