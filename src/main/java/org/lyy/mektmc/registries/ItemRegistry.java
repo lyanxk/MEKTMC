@@ -52,6 +52,12 @@ public final class ItemRegistry {
           ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_FLUID_CONTAINER);
     public static final DeferredItem<BlockItem> INFINITE_CHEMICAL_CONTAINER =
           ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_CHEMICAL_CONTAINER);
+    public static final DeferredItem<BlockItem> COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.COMPRESSED_GLASS);
+    public static final DeferredItem<BlockItem> DOUBLE_COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.DOUBLE_COMPRESSED_GLASS);
+    public static final DeferredItem<BlockItem> TRIPLE_COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.TRIPLE_COMPRESSED_GLASS);
 
     public static final DeferredItem<Item> INFINITY_DIRT_CELL = itemCell("infinity_dirt_cell", "minecraft:dirt");
     public static final DeferredItem<Item> INFINITY_SAND_CELL = itemCell("infinity_sand_cell", "minecraft:sand");

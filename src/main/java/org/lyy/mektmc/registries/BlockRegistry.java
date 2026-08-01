@@ -1,7 +1,9 @@
 package org.lyy.mektmc.registries;
 
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -23,6 +25,13 @@ public final class BlockRegistry {
     public static final DeferredBlock<InfiniteChemicalContainerBlock> INFINITE_CHEMICAL_CONTAINER =
           BLOCKS.registerBlock("infinite_chemical_container", InfiniteChemicalContainerBlock::new, containerProperties());
 
+    public static final DeferredBlock<TransparentBlock> COMPRESSED_GLASS =
+          BLOCKS.registerBlock("compressed_glass", TransparentBlock::new, glassProperties());
+    public static final DeferredBlock<TransparentBlock> DOUBLE_COMPRESSED_GLASS =
+          BLOCKS.registerBlock("double_compressed_glass", TransparentBlock::new, glassProperties());
+    public static final DeferredBlock<TransparentBlock> TRIPLE_COMPRESSED_GLASS =
+          BLOCKS.registerBlock("triple_compressed_glass", TransparentBlock::new, glassProperties());
+
     private static BlockBehaviour.Properties containerProperties() {
         return BlockBehaviour.Properties.of()
               .mapColor(DyeColor.BLACK)
@@ -30,6 +39,10 @@ public final class BlockRegistry {
               .sound(SoundType.METAL)
               .requiresCorrectToolForDrops()
               .noOcclusion();
+    }
+
+    private static BlockBehaviour.Properties glassProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS);
     }
 
     private BlockRegistry() {

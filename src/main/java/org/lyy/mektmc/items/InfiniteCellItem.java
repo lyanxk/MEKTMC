@@ -3,8 +3,12 @@ package org.lyy.mektmc.items;
 import appeng.api.stacks.AEKey;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import org.lyy.mektmc.ae.InfiniteCellTooltipComponent;
 
 public final class InfiniteCellItem extends Item {
 
@@ -35,5 +39,13 @@ public final class InfiniteCellItem extends Item {
             }
         }
         return keys;
+    }
+
+    @Override
+    public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
+        List<AEKey> keys = getFixedKeys();
+        return keys.isEmpty()
+              ? Optional.empty()
+              : Optional.of(new InfiniteCellTooltipComponent(keys));
     }
 }
