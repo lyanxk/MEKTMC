@@ -13,9 +13,6 @@ public final class ModCreativeTabAdditions {
 
         if (!"appmek".equals(tabKey.location().getNamespace())) return;
 
-        event.accept(ItemRegistry.CATEGORY_INDEX.get());
-        event.accept(ItemRegistry.CATEGORIZED_TERMINAL.get());
-        event.accept(ItemRegistry.CATEGORY_DISK.get());
         event.accept(ItemRegistry.INFINITE_ETHYLENE_CELL.get());
         event.accept(ItemRegistry.INFINITE_DEUTERIUM_CELL.get());
         event.accept(ItemRegistry.INFINITE_TRITIUM_CELL.get());
