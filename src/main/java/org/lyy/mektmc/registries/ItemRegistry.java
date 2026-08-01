@@ -3,6 +3,7 @@ package org.lyy.mektmc.registries;
 import mekanism.common.registries.MekanismChemicals;
 import mekanism.generators.common.registries.GeneratorsChemicals;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -13,6 +14,15 @@ import org.lyy.mektmc.items.InfiniteGasCellItem;
 public final class ItemRegistry {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Mektmc.MODID);
+
+    public static final DeferredItem<BlockItem> INFINITE_ITEM_CONTAINER =
+            ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_ITEM_CONTAINER);
+
+    public static final DeferredItem<BlockItem> INFINITE_FLUID_CONTAINER =
+            ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_FLUID_CONTAINER);
+
+    public static final DeferredItem<BlockItem> INFINITE_CHEMICAL_CONTAINER =
+            ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_CHEMICAL_CONTAINER);
 
     public static final DeferredItem<Item> INFINITE_ETHYLENE_CELL =
             ITEMS.register("infinite_ethylene_cell", () ->

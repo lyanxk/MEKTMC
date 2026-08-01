@@ -1,9 +1,24 @@
 {
+  "itemGroup.mektmc": "MEKTMC",
   "item.mektmc.infinite_ethylene_cell": "ME Infinite Ethylene Cell",
   "item.mektmc.infinite_deuterium_cell": "ME Infinite Deuterium Cell",
   "item.mektmc.infinite_tritium_cell": "ME Infinite Tritium Cell",
   "item.mektmc.infinite_dt_fuel_cell": "ME Infinite D-T Fuel Cell",
   "item.mektmc.infinite_brine_cell": "ME Infinite Brine Cell",
   "item.mektmc.infinite_lithium_cell": "ME Infinite Lithium Cell",
-  "item.mektmc.infinite_fissile_fuel_cell": "ME Infinite Fissile Fuel Cell"
+  "item.mektmc.infinite_fissile_fuel_cell": "ME Infinite Fissile Fuel Cell",
+  "block.mektmc.infinite_item_container": "Infinite Item Container",
+  "block.mektmc.infinite_fluid_container": "Infinite Fluid Container",
+  "block.mektmc.infinite_chemical_container": "Infinite Chemical Container",
+  "tooltip.mektmc.infinite_item_container.lock": "Locks to the first item inserted",
+  "tooltip.mektmc.infinite_item_container.infinite": "Unlimited item insertion and extraction",
+  "tooltip.mektmc.infinite_item_container.interaction": "Right-click to insert; left-click for 1; sneak-left-click for 1 stack",
+  "tooltip.mektmc.infinite_fluid_container.lock": "Locks to the first fluid inserted",
+  "tooltip.mektmc.infinite_fluid_container.infinite": "Unlimited fluid insertion and extraction",
+  "tooltip.mektmc.infinite_fluid_container.interaction": "Right-click with a fluid container for two-way transfer",
+  "tooltip.mektmc.infinite_chemical_container.lock": "Locks to the first chemical inserted",
+  "tooltip.mektmc.infinite_chemical_container.infinite": "Unlimited chemical insertion and extraction",
+  "tooltip.mektmc.infinite_container.clear": "Sneak-right-click to clear the container",
+  "tooltip.mektmc.infinite_container.capacity": "Capacity and per-operation limit: %s",
+  "tooltip.mektmc.infinite_container.immutable": "Insertion and extraction never change the stored amount"
 }

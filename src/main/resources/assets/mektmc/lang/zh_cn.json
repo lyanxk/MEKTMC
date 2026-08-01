@@ -1,9 +1,24 @@
 {
+  "itemGroup.mektmc": "MEKTMC",
   "item.mektmc.infinite_ethylene_cell": "ME 无限乙烯单元",
   "item.mektmc.infinite_deuterium_cell": "ME 无限氘单元",
   "item.mektmc.infinite_tritium_cell": "ME 无限氚单元",
   "item.mektmc.infinite_dt_fuel_cell": "ME 无限氘氚燃料单元",
   "item.mektmc.infinite_brine_cell": "ME 无限盐水单元",
   "item.mektmc.infinite_lithium_cell": "ME 无限锂单元",
-  "item.mektmc.infinite_fissile_fuel_cell": "ME 无限裂变燃料单元"
+  "item.mektmc.infinite_fissile_fuel_cell": "ME 无限裂变燃料单元",
+  "block.mektmc.infinite_item_container": "无限物品容器",
+  "block.mektmc.infinite_fluid_container": "无限流体容器",
+  "block.mektmc.infinite_chemical_container": "无限化学品容器",
+  "tooltip.mektmc.infinite_item_container.lock": "首次存入物品后锁定为该物品",
+  "tooltip.mektmc.infinite_item_container.infinite": "可以无限存取物品",
+  "tooltip.mektmc.infinite_item_container.interaction": "右键存入；左键取出 1 个；潜行左键取出 1 组",
+  "tooltip.mektmc.infinite_fluid_container.lock": "首次存入流体后锁定为该流体",
+  "tooltip.mektmc.infinite_fluid_container.infinite": "可以无限存取流体",
+  "tooltip.mektmc.infinite_fluid_container.interaction": "手持流体容器右键可进行双向传输",
+  "tooltip.mektmc.infinite_chemical_container.lock": "首次存入化学品后锁定为该化学品",
+  "tooltip.mektmc.infinite_chemical_container.infinite": "可以无限存取化学品",
+  "tooltip.mektmc.infinite_container.clear": "潜行右键清除容器内容",
+  "tooltip.mektmc.infinite_container.capacity": "容量与单次传输上限：%s",
+  "tooltip.mektmc.infinite_container.immutable": "存入和取出均不会改变容器中的数量"
 }

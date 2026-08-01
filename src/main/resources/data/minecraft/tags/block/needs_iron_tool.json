@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mektmc:infinite_item_container",
+    "mektmc:infinite_fluid_container",
+    "mektmc:infinite_chemical_container"
+  ]
+}

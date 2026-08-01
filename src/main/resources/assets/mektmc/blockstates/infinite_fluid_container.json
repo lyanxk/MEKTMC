@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mektmc:block/infinite_content_container"
+    }
+  }
+}
