@@ -25,6 +25,7 @@ public final class Config {
 
     private static final List<String> DEFAULT_ITEM_WHITELIST = List.of(
           "#minecraft:dirt",
+          "#minecraft:logs",
           "#c:stones",
           "#c:ores",
           "#c:concretes",
