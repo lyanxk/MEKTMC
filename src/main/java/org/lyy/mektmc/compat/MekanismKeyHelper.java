@@ -2,24 +2,19 @@ package org.lyy.mektmc.compat;
 
 import java.util.function.Supplier;
 
-import mekanism.api.chemical.Chemical;
+import mekanism.api.MekanismAPI;
 import me.ramidzkh.mekae2.ae2.MekanismKey;
+import net.minecraft.resources.ResourceLocation;
 
 public final class MekanismKeyHelper {
     private MekanismKeyHelper() {}
 
     @SuppressWarnings("removal")
-    public static Supplier<MekanismKey> gas(Supplier<? extends Chemical> gasSupplier) {
-        return () -> {
-            var gas = gasSupplier.get();
-            if (gas == null) {
-                throw new IllegalStateException("Gas supplier returned null");
-            }
-            var key = MekanismKey.of(gas.getStack(1));
-            if (key == null) {
-                throw new IllegalStateException("Gas supplier returned empty gas");
-            }
-            return key;
-        };
+    public static Supplier<MekanismKey> gas(String registryName) {
+        ResourceLocation id = ResourceLocation.parse(registryName);
+        return () -> MekanismAPI.CHEMICAL_REGISTRY.getOptional(id)
+              .filter(chemical -> chemical != MekanismAPI.EMPTY_CHEMICAL)
+              .map(chemical -> MekanismKey.of(chemical.getStack(1)))
+              .orElse(null);
     }
 }

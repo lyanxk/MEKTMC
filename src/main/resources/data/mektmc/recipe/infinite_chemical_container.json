@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GIG",
+    "ITI",
+    "GIG"
+  ],
+  "key": {
+    "G": {
+      "item": "mekanism:structural_glass"
+    },
+    "I": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "T": {
+      "item": "mektmc:triple_compressed_glass"
+    }
+  },
+  "result": {
+    "id": "mektmc:infinite_chemical_container",
+    "count": 1
+  }
+}

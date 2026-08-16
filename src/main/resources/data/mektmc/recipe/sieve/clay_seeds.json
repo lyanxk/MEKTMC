@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "poopsky" },
+    { "type": "neoforge:mod_loaded", "modid": "farmersdelight" },
+    { "type": "neoforge:mod_loaded", "modid": "kaleidoscope_cookery" },
+    { "type": "neoforge:mod_loaded", "modid": "youkaishomecoming" }
+  ],
+  "type": "poopsky:sieve",
+  "input": {
+    "item": "minecraft:clay"
+  },
+  "outputs": [
+    { "chance": 0.1, "item": { "count": 1, "id": "minecraft:pitcher_pod" } },
+    { "chance": 0.25, "item": { "count": 1, "id": "farmersdelight:rice" } },
+    { "chance": 0.2, "item": { "count": 1, "id": "kaleidoscope_cookery:rice" } },
+    { "chance": 0.15, "item": { "count": 1, "id": "kaleidoscope_cookery:wild_rice" } },
+    { "chance": 0.08, "item": { "count": 1, "id": "youkaishomecoming:udumbara_seeds" } }
+  ],
+  "processingTime": 100
+}

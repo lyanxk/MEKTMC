@@ -72,6 +72,46 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
+# MEKTMC directly uses these APIs and registry holders. Loading afterwards is
+# required so their static registries finish initializing before MEKTMC reads
+# them, especially when Mekanism Empowered extends Mekanism enums.
+[[dependencies."${mod_id}"]]
+modId = "mekanism"
+type = "required"
+versionRange = "[10.7.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "mekanismgenerators"
+type = "required"
+versionRange = "[10.7.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "ae2"
+type = "required"
+versionRange = "[19.2.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "appmek"
+type = "required"
+versionRange = "[1.6.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# PoopSky is optional, but when present MEKTMC must load afterwards so its
+# same-ID sieve recipes reliably override PoopSky's defaults.
+[[dependencies."${mod_id}"]]
+modId = "poopsky"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.

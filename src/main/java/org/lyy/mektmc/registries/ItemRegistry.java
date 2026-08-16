@@ -4,8 +4,6 @@ import appeng.api.stacks.AEKey;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
-import mekanism.common.registries.MekanismChemicals;
-import mekanism.generators.common.registries.GeneratorsChemicals;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -52,6 +50,12 @@ public final class ItemRegistry {
           ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_FLUID_CONTAINER);
     public static final DeferredItem<BlockItem> INFINITE_CHEMICAL_CONTAINER =
           ITEMS.registerSimpleBlockItem(BlockRegistry.INFINITE_CHEMICAL_CONTAINER);
+    public static final DeferredItem<BlockItem> COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.COMPRESSED_GLASS);
+    public static final DeferredItem<BlockItem> DOUBLE_COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.DOUBLE_COMPRESSED_GLASS);
+    public static final DeferredItem<BlockItem> TRIPLE_COMPRESSED_GLASS =
+          ITEMS.registerSimpleBlockItem(BlockRegistry.TRIPLE_COMPRESSED_GLASS);
 
     public static final DeferredItem<Item> INFINITY_DIRT_CELL = itemCell("infinity_dirt_cell", "minecraft:dirt");
     public static final DeferredItem<Item> INFINITY_SAND_CELL = itemCell("infinity_sand_cell", "minecraft:sand");
@@ -98,19 +102,19 @@ public final class ItemRegistry {
     public static final DeferredItem<Item> INFINITIES_ALL_ORES_CELL = itemCell("infinities_all_ores_cell", ORE_CONTENTS);
 
     public static final DeferredItem<Item> INFINITE_ETHYLENE_CELL =
-          chemicalCell("infinite_ethylene_cell", MekanismKeyHelper.gas(MekanismChemicals.ETHENE));
+          chemicalCell("infinite_ethylene_cell", "mekanism:ethene");
     public static final DeferredItem<Item> INFINITE_DEUTERIUM_CELL =
-          chemicalCell("infinite_deuterium_cell", MekanismKeyHelper.gas(GeneratorsChemicals.DEUTERIUM));
+          chemicalCell("infinite_deuterium_cell", "mekanismgenerators:deuterium");
     public static final DeferredItem<Item> INFINITE_TRITIUM_CELL =
-          chemicalCell("infinite_tritium_cell", MekanismKeyHelper.gas(GeneratorsChemicals.TRITIUM));
+          chemicalCell("infinite_tritium_cell", "mekanismgenerators:tritium");
     public static final DeferredItem<Item> INFINITE_D_T_FUEL_CELL =
-          chemicalCell("infinite_dt_fuel_cell", MekanismKeyHelper.gas(GeneratorsChemicals.FUSION_FUEL));
+          chemicalCell("infinite_dt_fuel_cell", "mekanismgenerators:fusion_fuel");
     public static final DeferredItem<Item> INFINITE_BRINE_CELL =
-          chemicalCell("infinite_brine_cell", MekanismKeyHelper.gas(MekanismChemicals.BRINE));
+          chemicalCell("infinite_brine_cell", "mekanism:brine");
     public static final DeferredItem<Item> INFINITE_LITHIUM_CELL =
-          chemicalCell("infinite_lithium_cell", MekanismKeyHelper.gas(MekanismChemicals.LITHIUM));
+          chemicalCell("infinite_lithium_cell", "mekanism:lithium");
     public static final DeferredItem<Item> INFINITE_FISSILE_FUEL_CELL =
-          chemicalCell("infinite_fissile_fuel_cell", MekanismKeyHelper.gas(MekanismChemicals.FISSILE_FUEL));
+          chemicalCell("infinite_fissile_fuel_cell", "mekanism:fissile_fuel");
 
     private static DeferredItem<Item> itemCell(String name, String... registryNames) {
         return registerCell(name, itemKeys(registryNames));
@@ -120,8 +124,8 @@ public final class ItemRegistry {
         return registerCell(name, List.of(AEKeySuppliers.fluid(registryName)));
     }
 
-    private static DeferredItem<Item> chemicalCell(String name, Supplier<? extends AEKey> keySupplier) {
-        return registerCell(name, List.of(keySupplier));
+    private static DeferredItem<Item> chemicalCell(String name, String registryName) {
+        return registerCell(name, List.of(MekanismKeyHelper.gas(registryName)));
     }
 
     private static DeferredItem<Item> registerCell(String name, List<Supplier<? extends AEKey>> keySuppliers) {
