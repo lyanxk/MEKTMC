@@ -12,7 +12,7 @@
     "item": "minecraft:dirt"
   },
   "outputs": [
-    { "chance": 0.35, "item": { "count": 1, "id": "minecraft:wheat_seeds" } },
+    { "chance": 1.0, "item": { "count": 1, "id": "minecraft:wheat_seeds" } },
     { "chance": 0.25, "item": { "count": 1, "id": "minecraft:beetroot_seeds" } },
     { "chance": 0.15, "item": { "count": 1, "id": "minecraft:pumpkin_seeds" } },
     { "chance": 0.12, "item": { "count": 1, "id": "poopsky:maggots_seeds" } },
@@ -29,7 +29,10 @@
     { "chance": 0.08, "item": { "count": 1, "id": "youkaishomecoming:green_coffee_bean" } },
     { "chance": 0.08, "item": { "count": 1, "id": "youkaishomecoming:tea_seeds" } },
     { "chance": 0.06, "item": { "count": 1, "id": "fruitsdelight:lemon_seeds" } },
-    { "chance": 0.04, "item": { "count": 1, "id": "fruitsdelight:durian_sapling" } }
+    { "chance": 0.04, "item": { "count": 1, "id": "fruitsdelight:durian_sapling" } },
+    { "chance": 0.75, "item": { "count": 1, "id": "minecraft:vine" } },
+    { "chance": 0.5, "item": { "count": 1, "id": "minecraft:hanging_roots" } },
+    { "chance": 0.25, "item": { "count": 1, "id": "minecraft:glow_lichen" } }
   ],
   "processingTime": 100
 }

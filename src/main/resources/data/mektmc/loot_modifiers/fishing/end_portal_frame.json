@@ -1,0 +1,11 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "mektmc" }
+  ],
+  "type": "neoforge:add_table",
+  "conditions": [
+    { "condition": "neoforge:loot_table_id", "loot_table_id": "minecraft:gameplay/fishing/treasure" },
+    { "condition": "minecraft:random_chance", "chance": 0.1 }
+  ],
+  "table": "mektmc:gameplay/fishing/end_portal_frame"
+}
