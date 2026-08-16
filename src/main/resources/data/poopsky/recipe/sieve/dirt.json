@@ -19,7 +19,6 @@
     { "chance": 0.15, "item": { "count": 1, "id": "farmersdelight:cabbage_seeds" } },
     { "chance": 0.15, "item": { "count": 1, "id": "farmersdelight:tomato_seeds" } },
     { "chance": 0.15, "item": { "count": 1, "id": "farmersdelight:onion" } },
-    { "chance": 0.15, "item": { "count": 1, "id": "corn_delight:corn_kernel" } },
     { "chance": 0.12, "item": { "count": 1, "id": "kaleidoscope_chinesefood:eggplant_seed" } },
     { "chance": 0.12, "item": { "count": 1, "id": "kaleidoscope_cookery:tomato_seed" } },
     { "chance": 0.12, "item": { "count": 1, "id": "kaleidoscope_cookery:lettuce_seed" } },

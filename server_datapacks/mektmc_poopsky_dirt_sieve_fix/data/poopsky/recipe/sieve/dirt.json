@@ -80,13 +80,6 @@
       }
     },
     {
-      "chance": 0.15,
-      "item": {
-        "count": 1,
-        "id": "corn_delight:corn_kernel"
-      }
-    },
-    {
       "chance": 0.12,
       "item": {
         "count": 1,
